@@ -5,27 +5,36 @@
 let cisla = [];
 
 // První příklad - vypiš vzestupně čísla od 0 do 10
-for (let i=0; i<=10; i=i+1) {
+
+let i = 0;
+while (i<=9) {
+    i++;
     cisla.push(i);
     vypisCislo(i, "#prvni");
+    console.log(i);
     
    
 }
 // Druhý příklad - zkopíruj předchozí příklad
 // a vyzkoušej, jaký je rozdíl mezi <= a <
 // v podmínce uvnitř cyklu
-for (let i=0; i<10; i=i+1) {
-    cisla.push(i);
-    vypisCislo(i, "#druhy");
+let z=0; 
+while(z<9) {
+    z++;
+    cisla.push(z);
+    vypisCislo(z, "#druhy");
     
 }
 
 // Třetí příklad - vypiš sestupně čísla od 10 do 0
-for (let i=10; i>=0; i=i-1) {
-    cisla.push(i);
-    vypisCislo(i, "#treti");
+
+let y=11; 
+while (y>=2) {
+    y--;
+    cisla.push(y);
+    vypisCislo(y, "#treti");
     
-}
+} 
 
 
 function vypisCislo(cislo, kamHoNapsat) {
